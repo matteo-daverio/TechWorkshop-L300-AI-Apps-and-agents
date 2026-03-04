@@ -28,8 +28,8 @@ var tags = {
 }
 
 // Ensure the current resource group has the required tag via a subscription-scoped module
-module updateRgTags 'updateRgTags.bicep' = {
-  name: 'updateRgTags'
+module updateRgTagsFrance 'updateRgTags.bicep' = {
+  name: 'updateRgTagsFrance'
   scope: subscription()
   params: {
     rgName: resourceGroup().name
