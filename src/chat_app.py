@@ -206,7 +206,7 @@ async def websocket_endpoint(websocket: WebSocket):
             if parsed_response.get("discount_percentage"):
                 session_discount_percentage = parsed_response["discount_percentage"]
             session_loyalty_response = parsed_response  # Store the full response for later
-            # Do NOT send the response here! 
+            # Do NOT send the response here!
             log_timing("Customer Loyalty Task", start_time, f"Discount: {session_discount_percentage}")
 
     try:
